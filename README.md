@@ -1,2 +1,2 @@
-# tafystudio.github.io
-Tafy Studio GitHub Pages
+# tafystudio-pages
+Tafy Studio Pages
