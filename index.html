@@ -1,0 +1,50 @@
+---
+layout: default
+title: Tafy Studio — From parts to motion in 30 minutes
+---
+
+<section class="hero">
+  <div>
+    <h1>From parts to motion in <span style="color:var(--acc)">30 minutes</span>.</h1>
+    <p>Tafy Studio is a <strong>Distributed Robotics Operation System (DROS)</strong> that’s local-first, low-code, and plug-and-play—from ESP32 to Raspberry Pi to Jetson.</p>
+    <div class="cards" style="margin:1rem 0">
+      <div class="card"><h3>Low-code flows</h3><p>Build behaviors with Node-RED. Drop to code when you want.</p></div>
+      <div class="card"><h3>No drivers to write</h3><p>ESP-style firmware & containerized drivers. Auto-discover & auto-bind.</p></div>
+      <div class="card"><h3>Local-first & private</h3><p>Works offline. Cloud and remote access are optional add-ons.</p></div>
+    </div>
+    <p><a class="btn" href="/quickstart/">Install the DROS</a> &nbsp; <a href="/docs/overview/">Read the docs</a></p>
+    <div class="kpis">
+      <div class="kpi"><div style="font-weight:700;font-size:1.25rem">≤30 min</div><div>assemble → motion</div></div>
+      <div class="kpi"><div style="font-weight:700;font-size:1.25rem">Plug-and-play</div><div>no driver code</div></div>
+      <div class="kpi"><div style="font-weight:700;font-size:1.25rem">Local-first</div><div>cloud optional</div></div>
+    </div>
+  </div>
+  <div>
+    <div class="card code">
+      <h3>Install in one line</h3>
+      <pre><button class="copy-btn">Copy</button><code>curl -fsSL get.tafy.sh | bash</code></pre>
+      <p style="color:var(--muted);margin-top:.5rem">Then open <code>https://tafy.local</code>, flash your ESP32 in the browser, and import the “Avoid Obstacle” flow.</p>
+      <hr style="border-color:#1c232c"/>
+      <h3>What you get</h3>
+      <ul>
+        <li>k3s edge stack, Hub UI, Node-RED</li>
+        <li>NATS messaging and discovery</li>
+        <li>Web flasher for ESP32 motor + sensor firmware</li>
+        <li>Starter flows: teleop, avoid-obstacle, follow-color</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <h2>Why a Distributed Robotics Operation System?</h2>
+  <p>Robots are networks of sensors, actuators, and models across multiple computers. Tafy Studio treats the robot as a <em>distributed system</em>—so you can start small and scale out, without writing drivers or wrestling with networking.</p>
+
+  <div class="cards" style="margin-top:1rem">
+    <div class="card"><h3>Belief → Proof</h3><p><strong>“I can move in 30 minutes.”</strong><br/>Install, flash, import flow—done.</p></div>
+    <div class="card"><h3>Belief → Proof</h3><p><strong>“No drivers to write.”</strong><br/>ESP-style firmware and driver containers.</p></div>
+    <div class="card"><h3>Belief → Proof</h3><p><strong>“It scales.”</strong><br/>Add a Jetson; vision lands on GPU automatically.</p></div>
+  </div>
+
+  <p style="margin-top:1rem"><a class="btn" href="/quickstart/">Start now</a> &nbsp; <a href="/roadmap/">See the roadmap</a> &nbsp; <a href="/community/">Join the community</a></p>
+</section>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>{{ page.title | default: site.title }}</title>
+  {%- seo -%}
+  <link rel="icon" href="{{ site.favicon | relative_url }}"/>
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}"/>
+</head>
+<body>
+  {% include header.html %}
+  <main class="container">
+    {{ content }}
+  </main>
+  {% include footer.html %}
+  <script>
+    // copy buttons for code blocks
+    document.addEventListener('click', (e) => {
+      if (e.target.matches('.copy-btn')) {
+        const pre = e.target.closest('pre');
+        const code = pre.querySelector('code').innerText;
+        navigator.clipboard.writeText(code);
+        e.target.innerText = 'Copied!';
+        setTimeout(()=> e.target.innerText='Copy', 1600);
+      }
+    });
+  </script>
+</body>
+</html>

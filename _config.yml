@@ -1,3 +1,42 @@
-theme: jekyll-theme-minimal
-title: Tafy Studio
-description: Coming soon...
+title: Tafy Studio — Distributed Robotics Operation System (DROS)
+description: From parts to motion in 30 minutes. A local-first robotics platform for makers, educators, and engineers.
+url: https://tafy.studio
+baseurl: ""  # for apex domain
+theme: minima
+markdown: kramdown
+highlighter: rouge
+logo: /assets/img/logo.svg
+favicon: /assets/img/favicon.png
+permalink: /:categories/:title/
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+defaults:
+  -
+    scope: { path: "" }
+    values: { layout: default }
+  -
+    scope: { path: "docs" }
+    values: { layout: docs }
+collections:
+  posts:
+    output: true
+  docs:
+    output: true
+    permalink: /docs/:path/
+nav:
+  - name: Home
+    url: /
+  - name: Quickstart
+    url: /quickstart/
+  - name: Docs
+    url: /docs/overview/
+  - name: Roadmap
+    url: /roadmap/
+  - name: Community
+    url: /community/
+  - name: Security
+    url: /security/
+  - name: Blog
+    url: /blog/

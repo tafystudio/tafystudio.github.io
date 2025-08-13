@@ -1,0 +1,14 @@
+<header class="site-header">
+  <div class="nav">
+    <a class="brand" href="{{ "/" | relative_url }}">
+      <img src="{{ site.logo | relative_url }}" alt="Tafy Studio" />
+      <span>Tafy Studio</span>
+    </a>
+    <nav>
+      {% for item in site.nav %}
+        <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
+      {% endfor %}
+      <a class="btn" href="https://github.com/your-org/tafystudio">GitHub</a>
+    </nav>
+  </div>
+</header>
